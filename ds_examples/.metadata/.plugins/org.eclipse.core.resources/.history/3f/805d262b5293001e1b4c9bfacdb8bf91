@@ -1,0 +1,24 @@
+package com.example.pg.ds_examples.src.sort;
+
+public class Dummy4 {
+
+	public static void main(String[] args) {
+		// Abcd  === >dcba
+
+		String str1="abcd";
+		String str2="dcba";
+		String reverse="";
+		char[] ch = str1.toCharArray();
+		for(int i=ch.length-1;i>=0;i--) {
+			reverse += ch[i];
+		}
+		System.out.println(reverse);
+		if(reverse.equals(str2)) {
+			System.out.println("strings are palindrome");
+		}
+		else {
+			System.out.println("strings are not palindrome");
+		}
+	}
+
+}

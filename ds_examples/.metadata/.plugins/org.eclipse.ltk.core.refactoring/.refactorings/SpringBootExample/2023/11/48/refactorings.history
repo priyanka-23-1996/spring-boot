@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;com.example.boot.exception&apos; to &apos;developer-joyofenergy-java/src/main/java/uk.tw.energy&apos;&#x0D;&#x0A;- Original project: &apos;SpringBootExample&apos;&#x0D;&#x0A;- Destination element: &apos;developer-joyofenergy-java/src/main/java/uk.tw.energy&apos;&#x0D;&#x0A;- Original element: &apos;SpringBootExample/src/main/java/com.example.boot.exception&apos;" description="Copy package" destination="=developer-joyofenergy-java/src\/main\/java=/gradle_scope=/main=/=/gradle_used_by_scope=/main,test,functionalTest=/&lt;uk.tw.energy" element1="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.example.boot.exception" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1701014648787" version="1.0"/>
+</session>

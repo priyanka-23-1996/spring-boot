@@ -1,0 +1,20 @@
+package com.example.pg.ds_examples.src.arrays;
+
+public class ReverseNumber {
+
+	public static void main(String[] args) {
+		int number=345;
+		int rem=0;
+		int reverse=0;
+		while(number != 0) {
+			    rem = number % 10;
+			    reverse = rem * 10;
+			    number /= number;
+			
+			
+		}
+		System.out.println(reverse);
+
+	}
+
+}

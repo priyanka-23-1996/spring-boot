@@ -1,0 +1,22 @@
+package com.example.pg.ds_examples.src.arrays;
+
+public class ReverseStr {
+
+	public static void main(String[] args) {
+
+		String input = "abcd";
+		reverseString1(input);
+	}
+
+	private static void reverseString1(String input) {
+		int n= input.length();
+		String output="";
+		for(int i=0;i<n ;i++) {
+			output += input.charAt(i);
+			
+		}
+		System.out.println(output);
+		
+	}
+
+}

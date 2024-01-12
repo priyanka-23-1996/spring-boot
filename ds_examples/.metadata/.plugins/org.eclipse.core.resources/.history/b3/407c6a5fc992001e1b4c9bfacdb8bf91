@@ -1,0 +1,10 @@
+package com.example.pg.ds_examples.src.arrays;
+
+public class ListOperations {
+
+	public static void main(String[] args) {
+		String s="abcd";
+		System.out.println(s.replaceAll(s.substring(1,3),""));
+	}
+
+}

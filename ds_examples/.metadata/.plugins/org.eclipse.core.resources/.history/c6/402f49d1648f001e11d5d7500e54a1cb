@@ -1,0 +1,24 @@
+package com.example.pg.DateTime;
+
+import java.time.Clock;
+import java.time.Instant;
+import java.time.ZoneId;
+
+public class TimeExample {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Instant nowTime= Instant.now();
+		System.out.println(nowTime);
+		
+		//Java Instant now(Clock clock) method Example
+		   Instant instant = Instant.now(Clock.systemUTC());  
+		     System.out.println(instant);     
+		     
+		     Instant i = Instant.now(Clock.system(ZoneId.of("America/Chicago")));  
+		        System.out.println(i);  
+		
+
+	}
+
+}

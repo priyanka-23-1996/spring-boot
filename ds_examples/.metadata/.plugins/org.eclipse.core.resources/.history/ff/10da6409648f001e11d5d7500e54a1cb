@@ -1,0 +1,20 @@
+package com.example.pg.DateTime;
+
+import java.time.Clock;
+import java.time.Instant;
+
+public class TimeExample {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Instant nowTime= Instant.now();
+		System.out.println(nowTime);
+		
+		//Java Instant now(Clock clock) method Example
+		   Instant instant = Instant.now(Clock.systemUTC());  
+		     System.out.println(instant);     
+		
+
+	}
+
+}

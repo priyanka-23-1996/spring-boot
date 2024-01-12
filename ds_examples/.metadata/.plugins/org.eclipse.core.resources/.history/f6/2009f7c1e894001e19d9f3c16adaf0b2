@@ -1,0 +1,43 @@
+import java.util.HashMap;
+import java.util.Map;
+
+public class Abctest {
+
+	public static void main(String[] args) {
+
+		String s1 = "Saurav";
+		String s2 = "Priyanka";
+		// a 4 r 2
+		int count = 0;
+		Map<Character, Integer> m = new HashMap<Character, Integer>();
+		char[] ch1 = s1.toCharArray();
+		char[] ch2 = s2.toCharArray();
+		for (int i = 0; i < ch1.length; i++) {
+
+			if (m.containsKey(ch1[i])) {
+				count = m.get(ch1[i]);
+				m.put(ch1[i], count + 1);
+			} else
+				m.put(ch1[i], 1);
+
+		}
+		for (int j = 0; j < ch2.length; j++) {
+
+			if (m.containsKey(ch2[j])) {
+				count = m.get(ch2[j]);
+				m.put(ch2[j], count + 1);
+			} else
+				m.put(ch2[j], 1);
+
+		}
+
+		for (
+
+		Map.Entry<Character, Integer> entry : m.entrySet()) {
+			if (entry.getValue() > 1)
+				System.out.println(entry.getKey() + " count = " + entry.getValue());
+		}
+
+	}
+
+}

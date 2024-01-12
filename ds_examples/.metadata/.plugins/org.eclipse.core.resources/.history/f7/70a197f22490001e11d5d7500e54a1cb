@@ -1,0 +1,22 @@
+package com.example.pg.ds_examples.src;
+
+import java.util.List;
+import java.util.stream.Stream;
+
+public class Abc {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		List<String> l= List.of("5","2","a");
+		for(String s: l) {
+			int sum=0;
+			 int n=Integer.valueOf(s);
+			if(Integer.valueOf(s)>0) {
+				sum+=n;
+			}
+		}
+
+	}
+
+}
