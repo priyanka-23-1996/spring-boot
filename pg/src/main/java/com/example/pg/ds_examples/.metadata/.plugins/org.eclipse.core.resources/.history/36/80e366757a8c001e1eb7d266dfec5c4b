@@ -1,0 +1,31 @@
+/**
+ * 
+ */
+package uk.tw.energy.exception;
+
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.ControllerAdvice;
+import org.springframework.web.bind.annotation.ExceptionHandler;
+
+import uk.tw.energy.util.MeterReadingMessages;
+
+/**
+ * 
+ * This class is used to process exceptions thrown in the application
+ * @author priyanka
+ *
+ */
+@ControllerAdvice
+public class MeterReadingExceptionController {
+
+	@ExceptionHandler(value = MeterReadingInvalidException.class)
+	public ResponseEntity<Object> exception(MeterReadingInvalidException ex) {
+		return new ResponseEntity<Object>(MeterReadingMessages.INVALID_METER_READINGS, HttpStatus.OK);
+	}
+	
+	@ExceptionHandler(value = NullPointerException.class)
+	public ResponseEntity<Object> exception(NullPointerException ex) {
+		return new ResponseEntity<Object>(MeterReadingMessages.NULL_POINTER_EXCEPTION_MESSAGE, HttpStatus.OK);
+	}
+}

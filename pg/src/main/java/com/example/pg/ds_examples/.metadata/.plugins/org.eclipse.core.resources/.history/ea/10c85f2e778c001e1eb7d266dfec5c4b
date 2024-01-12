@@ -1,0 +1,22 @@
+/**
+ * 
+ */
+package uk.tw.energy.exception;
+
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.ControllerAdvice;
+import org.springframework.web.bind.annotation.ExceptionHandler;
+
+/**
+ * @author priyanka
+ *
+ */
+@ControllerAdvice
+public class MeterReadingExceptionController {
+
+	@ExceptionHandler(value = MeterReadingInvalidException.class)
+	public ResponseEntity<Object> exception(MeterReadingInvalidException ex) {
+		return new ResponseEntity<Object>("Meter Readings are Invalid.", HttpStatus.OK);
+	}
+}

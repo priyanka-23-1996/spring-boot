@@ -1,0 +1,13 @@
+/**
+ * 
+ */
+package uk.tw.energy.util;
+
+/**
+ * 
+ */
+public class MeterReadingMessages {
+
+	public static String INVALID_METER_READINGS = "Invalid meter Readings, Please enter correct readings.";
+	
+}
